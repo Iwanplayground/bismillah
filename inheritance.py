@@ -10,4 +10,17 @@ class orang:
 iwan = orang('Ridwan','JOGJA')
 iwan.perkenalan()
 
+# membuat objek turunannya
+
+class mhs(orang):
+    pass
+
+class karyawan(orang):
+    pass
+
+andi = mhs('andi','jakarta')
+somad = karyawan('somade','NTT')
+
+andi.perkenalan()
+somad.perkenalan()
 
