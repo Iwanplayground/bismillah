@@ -34,3 +34,27 @@ cbr = motor()
 
 sepeda.berjalan()
 cbr.berjalan(180)
+
+print('==='*30)
+# bisa juga kita panggil fungsi pada kelas induk, spt pada pewarisan sblmnya
+
+class makhlukhidup:
+    def bicara(self):
+        print('ngomong...')
+
+class kucing(makhlukhidup):
+    def bicara(self,bunyi):
+        super().bicara()
+        print(f'----> dengan suara {bunyi}')
+
+manusia = makhlukhidup()
+milli = kucing()
+
+manusia.bicara()
+milli.bicara('meonggg')
+
+'''
+SIMPULAN
+1. Teknik overriding membuat kita bisa memodifikasi fungsi yang sudah didefinisikan pada kelas Induk
+2. Kita juga bisa mempertahankan fungsi asli yang terdapat pada kelas induk dengan memanggil fungsi super()
+'''
