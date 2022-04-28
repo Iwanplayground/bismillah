@@ -1,25 +1,25 @@
-class orang:
+class mhs:
 
-    def __init__ (self, nama, asal):
+    def __init__ (self, nama, kampus):
         self.nama = nama
-        self.asal = asal
+        self.kampus = kampus
 
     def perkenalan (self):
-        print(f'Perkenalkan nama saya {self.nama} dari {self.asal}')
+        print(f'Perkenalkan nama saya {self.nama} dari kampus {self.kampus}')
 
-iwan = orang('Ridwan','JOGJA')
+iwan = mhs('Ridwan','Nanyang Technological University')
 iwan.perkenalan()
 
 # membuat objek turunannya
 
-class mhs(orang):
+class mhsjurusan(mhs):
     pass
 
-class karyawan(orang):
+class mhsorganisasi(mhs):
     pass
 
-andi = mhs('andi','jakarta')
-somad = karyawan('somade','NTT')
+andi = mhsjurusan('andi','UI')
+somad = mhsorganisasi('somade','UGM')
 
 andi.perkenalan()
 somad.perkenalan()
